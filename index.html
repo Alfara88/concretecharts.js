@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jsExample</title>
+    <script src="js/CircleChart.js" type="application/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+    <style>
+        h1, a {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            text-align: center;
+            font-size: 32pt;
+            color: brown;
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>MegaCharts on canvas</h1>
+    <div>
+        <canvas id="CircleChart_1">Some text here...</canvas>
+        <canvas id="CircleChart_2">Some text here...</canvas>
+    </div>
+    <div>
+        <canvas id="histogram">Some text here...</canvas>
+    </div>
+    <script type="application/javascript">
+        var chart1 = new CircleChart();
+        chart1.init("CircleChart_1", 56);
+
+        var chart2 = new CircleChart();
+        chart2.setColors('#e5eaf1', '#4c709d');
+        chart2.init("CircleChart_2", 71);
+    </script>
+</body>
+</html>
