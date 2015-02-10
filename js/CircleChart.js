@@ -18,8 +18,8 @@ function CircleChart() {
     var lightColor = '#c2d56a';
     var darkColor = '#8abc4b';
     var inc = true;
-    var mouseX = null;
-    var mouseY = null;
+    var mouseX = -10;
+    var mouseY = -10;
 
     window.requestAnimFrame = (function(callback) {
         return window.requestAnimationFrame ||
